@@ -16,8 +16,25 @@
     font-weight: bold;              /*Texto en negrita*/  
 }
 .principal{
-    max-width: 800px;   /* Limita el ancho del contenido */
-    margin: 40px auto;     /* Centra horizontal y añade margen arriba/abajo */
+    display: flex;
+    max-width: 1200px;   /* Limita el ancho del contenido */
+    margin: 30px auto;     /* Centra horizontal y añade margen arriba/abajo */
+    /* margin-left: 20px; */
     padding: 20px;         /* Espacio interno */
-    text-align: left;    /* Centra el texto */
+    gap: 30px;
+    align-items: flex-start;
+}
+.principal p {
+    margin-bottom: 35px; /* Esto agrega espacio debajo de cada párrafo */
+}
+.principal section{
+    flex: 4;
+    padding-right: 0px; /* Separación visual */
+    
+}
+.barra-lateral {
+    flex: 1; /* Le da 1 parte de espacio (ej. 25% del ancho) */
+    background-color: #f4f4f4; /* Un color de fondo suave para destacarla */
+    padding: 15px;
+    border-radius: 5px;
 }
